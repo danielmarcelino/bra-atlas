@@ -13,7 +13,7 @@ setuptools.setup(
     version='0.0.5',
     long_description=README,
     long_description_content_type="text/markdown",
-    url='https://github.com/danielmarcelino/ibge_eleitoral/',
+    url='https://github.com/danielmarcelino/jota_eleitoral/',
     packages=setuptools.find_packages(),
     python_requires=">=3.5",
     install_requires=['requests'],
@@ -29,6 +29,6 @@ setuptools.setup(
         'Natural Language :: Portuguese (Brazilian)'
     ],
     project_urls={
-        'Documentation': 'https://github.com/danielmarcelino/ibge_eleitoral/blob/master/README.md'
+        'Documentation': 'https://github.com/danielmarcelino/jota_eleitoral/blob/master/README.md'
     }
 )
