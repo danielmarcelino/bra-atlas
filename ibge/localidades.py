@@ -157,3 +157,16 @@ class MunicipioPorUF(object):
 
     def getNome(self):
         return [self.json_ibge[i]['nome'] for i in range(self.count())]
+
+
+
+
+class GeoJsonRegioes(object):
+
+    def __init__(self, json_ibge=None):
+       url = 'https://servicodados.ibge.gov.br/api/v2/malhas/?resolucao=1&formato=application/vnd.geo+json'
+       request = requests.get(url, headers=headers)
+       json_ibge = json.loads(request.content.decode('utf-8'))
+
+    def json(self):
+        return json_ibge
